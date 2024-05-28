@@ -1,5 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 
+import Header from "~/components/layout/header";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Welcome to Bloggy!" },
@@ -13,7 +15,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
